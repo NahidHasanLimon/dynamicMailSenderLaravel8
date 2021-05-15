@@ -40,7 +40,7 @@ class BasicMailController extends Controller
       Mail::send('basicMail', $data, function($message) {
          $message->to('tech.antopolis@gmail.com', 'Limon Learning')->subject
             ('Laravel HTML Testing Mail');
-         $message->from('laravel.antopolis@gmail.com','Nahid Hasan Limon');
+         // $message->from('laravel.antopolis@gmail.com','Nahid Hasan Limon');
       });
       echo "HTML Email Sent. Check your inbox.";
    }
